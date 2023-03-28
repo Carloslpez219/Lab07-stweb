@@ -1,0 +1,25 @@
+body {
+  background-color: #99d98c;
+}
+
+h1 {
+  font-size: 36px;
+  color: #1a759f;
+  text-shadow: #184e77 2px 2px;
+  border-width: 1px;
+  border-color: #184e77;
+  border: solid;
+}
+
+p {
+  font-size: 16px;
+  color: #184e77;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+img {
+  width: 700px;
+}
+
+/*# sourceMappingURL=styles.css.map */

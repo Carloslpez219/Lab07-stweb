@@ -1,0 +1,30 @@
+$color-primario: #1a759f;
+$color-fondo: #99d98c;
+$color-secundario: #184e77;
+$tamano-encabezado: 36px;
+
+
+  body {
+    background-color: $color-fondo;
+  }
+
+  h1 {
+    font-size: $tamano-encabezado;
+    color: $color-primario;
+    text-shadow: $color-secundario 2px 2px;
+    border-width: 1px;
+    border-color: $color-secundario;
+    border: solid;
+  }
+
+  p {
+    font-size: 16px;
+    color: $color-secundario;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  img {
+    width: 700px;
+  }
+
