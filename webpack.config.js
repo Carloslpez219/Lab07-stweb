@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: "production",
   entry: {
     page1: './src/pages/page1/index.js',
     page2: './src/pages/page2/libros-populares.js',
@@ -66,6 +67,17 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'assets/audios/[name][ext]'
+        }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            configFile: path.resolve(__dirname, "babel.config.js"),
+            presets: ["@babel/preset-env"]
+          }
         }
       },
     ],

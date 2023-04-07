@@ -1,5 +1,9 @@
 {
   "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.5",
@@ -8,10 +12,11 @@
     "webpack-dev-server": "^4.13.1"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "animate.css": "^4.1.1"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "run-babel": "babel src -d output_babel"
   }
-  
 }

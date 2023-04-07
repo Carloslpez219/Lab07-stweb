@@ -1,3 +1,4 @@
+import '@babel/polyfill';
 window.onload = function() {
     const article = document.getElementById("article");
     const h2 = document.createElement("h2");

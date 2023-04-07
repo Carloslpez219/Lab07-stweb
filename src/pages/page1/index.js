@@ -1,3 +1,4 @@
+import '@babel/polyfill';
 window.onload = function() {
     // crea el enlace Libros populares
     var linkPopulares = document.createElement("a");

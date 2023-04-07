@@ -1,3 +1,4 @@
+import '@babel/polyfill';
 window.onload = function() {
 
     const container = document.getElementById("container");
